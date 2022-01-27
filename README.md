@@ -1,6 +1,6 @@
-# Lecture 4: Angry Vectors
+# Lecture 4: Points and Vectors
 
-Detailed explanation of this code can be found in the lecture video (will be added after class).
+Detailed explanation of this code can be found in the [lecture video](https://mediaspace.umn.edu/media/t/1_n7fpdlln).
 
 You can run the program on [GitHub pages](https://csci-4611-spring-2022.github.io/Lecture-4).
 
