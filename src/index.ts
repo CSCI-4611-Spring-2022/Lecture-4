@@ -113,16 +113,8 @@ class Game
 
     private onMouseDown(event: paper.MouseEvent) : void
     {
-        // If the bee is not already moving, then do a hit test
-        // to see if the user is clicking on it
         if(this.velocity.length == 0)
-        {
-            var hitResult = this.bee.hitTestAll(event.point);
-            if(hitResult.length > 0)
-            {
-                this.line.visible = true;
-            }
-        }
+            this.line.visible = true;
     }  
 
     private onMouseUp(event: paper.MouseEvent) : void
