@@ -93,6 +93,7 @@ class Game
                 this.velocity.y = 0;
                 this.bee.position.x = 200;
                 this.bee.position.y = this.height - 250;
+                this.bee.rotation = 0;
             }
         }
     }
@@ -124,7 +125,7 @@ class Game
         if(this.line.visible)
         {
             var mouseVector = event.point.subtract(this.bee.position);
-            this.velocity.x = mouseVector.length * 10; // modify this constant to tune the gameplay
+            this.velocity.x = mouseVector.length * 6; // modify this constant to tune the gameplay
             this.velocity.y = 0;
             this.velocity = this.velocity.rotate(this.bee.rotation, new paper.Point(0, 0));
             
