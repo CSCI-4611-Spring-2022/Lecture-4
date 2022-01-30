@@ -115,7 +115,12 @@ class Game
     private onMouseDown(event: paper.MouseEvent) : void
     {
         if(this.velocity.length == 0)
+        {
             this.line.visible = true;
+
+            // Call the mouse move function to make sure the line gets drawn correctly
+            this.onMouseMove(event);
+        }
     }  
 
     private onMouseUp(event: paper.MouseEvent) : void
